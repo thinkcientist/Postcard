@@ -29,11 +29,14 @@ class ViewController: UIViewController {
         
         //This is the action that covers the send mail button in the UI. This code will evaluate when we press the button
         
+
+        
         messageLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
         messageLabel.textColor = UIColor.redColor()
+        //added the set title to the button method
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
         
         
